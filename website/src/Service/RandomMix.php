@@ -4,6 +4,10 @@ namespace App\Service;
 
 Class RandomMix implements RandomInterface
 {
+
+    /**
+     * @var array<int|string, \App\Service\RandomInterface>
+     */
     public $multiple;
     
     public function __construct(RandomInterface ...$multiple)
