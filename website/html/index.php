@@ -11,6 +11,6 @@ $log = new Logger('name');
 $log->pushHandler(new StreamHandler('/var/www/log/app.log', Monolog\Logger::INFO));
 $log->info('Foo');
 
-$randInt = new RandomNumber();
+$randInt = new RandomNumber(null, null);
 
 echo '........botinfg' . $randInt->generateInterval(100,110);

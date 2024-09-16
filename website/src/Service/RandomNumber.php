@@ -7,7 +7,7 @@ Class RandomNumber implements RandomInterface
 
     const SEQUENCE = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
     
-    public function __construct(public string $text, public int $shift)
+    public function __construct(public ?string $text, public ?int $shift)
     {
     }
 
